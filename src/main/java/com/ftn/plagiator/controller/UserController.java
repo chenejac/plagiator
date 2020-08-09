@@ -89,10 +89,11 @@ public class UserController {
 			return new ResponseEntity<>(HttpStatus.LOCKED);
 		}
 		
-		if (!checkPassword.checkIsPasswordCorrect(registrationDTO.getPassword())) {
-			//ako nisu ispunjeni uslovi za dobar password
-			return new ResponseEntity<>(HttpStatus.LOCKED);
-		}
+		//skinuto ogranicenje za lozinku
+//		if (!checkPassword.checkIsPasswordCorrect(registrationDTO.getPassword())) {
+//			//ako nisu ispunjeni uslovi za dobar password
+//			return new ResponseEntity<>(HttpStatus.LOCKED);
+//		}
 		
 		User tempUser = userService.findByEmail(registrationDTO.getEmail());
 		if(tempUser != null) {

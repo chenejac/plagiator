@@ -117,7 +117,7 @@ public class UploadFileController {
 		//System.out.println(stringParam);
 		
 		
-		String[] wordList = stringParam.split("\\s+"); //splituj po space-u
+    	String[] wordList = stringParam.split("[\\s\\-\\.\\'\\?\\,\\_\\@\\;\\:]+"); //splituj po space-u
 		System.out.println(wordList.length);
 		
 		StringBuilder strBilder = new StringBuilder();

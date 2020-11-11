@@ -10,7 +10,7 @@ Za skladištenje podataka korišćena je MySql baza.
 - U application.properties treba uneti username i password.
 
 Da bi se uspešno pokrenula aplikacija neophodno je 
-- Build-ovati klijenta koji se nalazi na: https://github.com/stefan096/plagiator_front
+- Build-ovati klijenta koji se nalazi na: https://github.com/chenejac/plagiator_front
 - Pokrenuti backend u radnom okruženju.
 - U web browser-u neophodno je podesiti licencu po https secure protokolu.
 
